@@ -25,8 +25,9 @@ This is a **Task Management System** built using the **MERN stack** (MongoDB, Ex
 
 ## 🔧 **Installation & Setup**  
 
-git clone https://github.com/your-repo/task-management-system.git
-cd task-management-system
+git clone https://github.com/shreeraksha-mrao/Taskmanagement.git
+
+cd Editor-Tasks-main
 
 cd server
 npm install

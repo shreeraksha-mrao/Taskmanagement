@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    width: 100vw;
+  }
+  
+  .navbar ol {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 4rem;
+    list-style: none;
+    justify-content: center;
+    background: black;
+    padding: 1rem 0;
+    color: white;
+    cursor: pointer;
+    font-family: cursive;
+  }
+  ol li a {
+    color: white;
+    text-decoration: none; /* Removes underline */
+    list-style: none;
+    text-decoration: none; 
+  }
+ 
+  
+  a:hover {
+    color: gray;
+  }
+  

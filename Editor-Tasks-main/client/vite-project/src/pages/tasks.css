@@ -1,0 +1,57 @@
+/* Task Container */
+.tasks-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Task List */
+  .tasks-list {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .tasks-list li {
+    background: #f4f4f4;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  .tasks-list li:hover {
+    background: #ddd;
+    cursor: pointer;
+  }
+  
+  /* Task Links */
+  .tasks-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .tasks-list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Add Task Button */
+  .add-task-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #28a745;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .add-task-btn:hover {
+    background: #218838;
+  }
+  

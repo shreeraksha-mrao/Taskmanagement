@@ -1,0 +1,52 @@
+/* Center the content */
+.editors-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Title Styling */
+  .title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* List Styling */
+  .editors-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .editor-item {
+    margin: 10px 0;
+  }
+  
+  /* Link Styling */
+  .editor-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .editor-link:hover {
+    color: #0056b3;
+  }
+  
+  /* Button Styling */
+  .add-editor-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .add-editor-btn:hover {
+    background: #218838;
+  }
+  

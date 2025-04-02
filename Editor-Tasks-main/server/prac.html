@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const getCream = new Promise((resolve, reject)=>{
+            const cream = prompt("Is the cream available?")
+            setTimeout(()=>{
+                if(cream === "yes"){
+                    resolve("🍨")
+                }
+                else{
+                    reject("cream not available")
+                }
+            }, 2000)
+        })
+        const getSprinkles = new Promise((resolve, reject)=>{
+            const sprinkles = prompt("Is the sprinkles available?")
+            setTimeout(()=>{
+                if(sprinkles === "yes"){
+                    resolve("🎉")
+                }
+                else{
+                    reject("sprinkles not available")
+                }
+            }, 2000)
+        })
+        const makeDonut = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                getCream.then((cream)=>{
+                    getSprinkles.then((sprinkles)=>{
+                        resolve(cream+sprinkles+"🍩")
+                    })
+                    .catch((err)=> reject(err))
+                })
+                .catch((err)=>{
+                    reject(err)
+                })
+            },2000)
+        })
+
+        makeDonut.then((donut)=>{
+            let container = document.createElement("div")
+            container.innerHTML = `<h1>${donut}</h1>`
+            document.body.appendChild(container)
+
+        })
+        .catch(err =>{
+            let container = document.createElement("div")
+            container.innerHTML = `<h1>${err}</h1>`
+            document.body.appendChild(container)
+        })
+    </script>
+</body>
+</html>

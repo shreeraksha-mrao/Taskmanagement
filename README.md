@@ -29,12 +29,12 @@ git clone https://github.com/shreeraksha-mrao/Taskmanagement.git
 
 cd Editor-Tasks-main
 
-cd server
-npm install
+cd server->
+npm install->
 npm run dev
 
 
-cd client/viteproject
-npm install
+cd client/viteproject->
+npm install->
 npm run dev
 
